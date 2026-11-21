@@ -18,3 +18,11 @@ def get_data():
         result = connection.execute(text("SELECT * FROM margetable"))
         data = [dict(row) for row in result.mappings()]
     return {"data": data}
+
+
+@app.get("/order-details")
+def get_data():
+    with engine.connect() as connection:
+        result = connection.execute(text("SELECT * FROM order_details"))
+        data = [dict(row) for row in result.mappings()]
+    return {"data": data}
