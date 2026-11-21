@@ -1,1 +1,3 @@
-# practice_fun
+# This is fun project
+
+# Power bi fun project 
